@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Kind of Film</title>
+    <script src="https://kit.fontawesome.com/ed27c31baf.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #ffe6f7;
+            color: #ff02b7;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .nav-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            justify-content: center;
+        }
+        .home-container {
+            background-color: #ff02b7;
+            border-radius: 10px;
+            padding: 5px 10px;
+        }
+        .content-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+        }
+        .category {
+            background-color: #ffffff;
+            border: 2px solid #ff02b7;
+            border-radius: 15px;
+            padding: 15px;
+            width: 100%;
+            max-width: 300px;
+        }
+        .category-title {
+            background-color: #ff02b7;
+            color: #ffffff;
+            padding: 10px 0;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        video {
+            width: 100%;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-container">
+        <div class="home-container">
+            <li style="list-style: none;"><a href="index.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a></li>
+        </div>
+        <h1>My Kind of Film</h1>
+    </div>
+
+    <div class="content-container">
+        <div class="category">
+            <div class="category-title">TV Shows</div>
+            <p>"Stranger Things"</p>
+            <video controls>
+                <source src="stranger.mp4" type="video/mp4">
+            </video>
+            <p>"Blood Hounds"</p>
+            <video controls>
+                <source src="blood.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="category">
+            <div class="category-title">Movies</div>
+            <p>"Avengers: Endgame"</p>
+            <video controls>
+                <source src="endgame.mp4" type="video/mp4">
+            </video>
+            <p>"Tokyo Drift"</p>
+            <video controls>
+                <source src="tokyo.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</body>
+</html>
